@@ -16,7 +16,7 @@ import java.util.concurrent.CompletableFuture;
 public class BCUtils {
 
     private static ChannelBinding.RawDataChannel channel;
-    private static List<CompletableFuture<List<String>>> getServers = new ArrayList<>();
+    private static final List<CompletableFuture<List<String>>> getServers = new ArrayList<>();
 
     private static ChannelBinding.RawDataChannel getChannel(Object plugin){
         if (channel == null){
